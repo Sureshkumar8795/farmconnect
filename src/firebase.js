@@ -3,12 +3,12 @@ import { getFirestore } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBdABpnk7HhUR9lGsF5Kf-GydOAeJ9hOJ4",
-  authDomain: "farmconnect-2006.firebaseapp.com",
-  projectId: "farmconnect-2006",
-  storageBucket: "farmconnect-2006.firebasestorage.app",
-  messagingSenderId: "712609427475",
-  appId: "1:712609427475:web:f13bc43df48fb910090fe6"
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID
 };
 
 const app = initializeApp(firebaseConfig);
